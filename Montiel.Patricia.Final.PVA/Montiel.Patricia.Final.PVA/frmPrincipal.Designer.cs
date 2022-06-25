@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarJugadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -106,7 +107,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(1116, 249);
+            this.button1.Location = new System.Drawing.Point(1190, 227);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(379, 61);
             this.button1.TabIndex = 1;
@@ -116,8 +117,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::Montiel.Patricia.Final.PVA.Properties.Resources.Casa;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 122);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 164);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(958, 683);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +130,7 @@
             // 
             this.lblIntentos.AutoSize = true;
             this.lblIntentos.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIntentos.Location = new System.Drawing.Point(1116, 376);
+            this.lblIntentos.Location = new System.Drawing.Point(1190, 337);
             this.lblIntentos.Name = "lblIntentos";
             this.lblIntentos.Size = new System.Drawing.Size(142, 38);
             this.lblIntentos.TabIndex = 3;
@@ -139,7 +141,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(207, 58);
+            this.label1.Location = new System.Drawing.Point(248, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1304, 38);
             this.label1.TabIndex = 4;
@@ -148,9 +150,9 @@
             // 
             // picRespuesta
             // 
-            this.picRespuesta.Location = new System.Drawing.Point(1143, 466);
+            this.picRespuesta.Location = new System.Drawing.Point(1143, 414);
             this.picRespuesta.Name = "picRespuesta";
-            this.picRespuesta.Size = new System.Drawing.Size(401, 277);
+            this.picRespuesta.Size = new System.Drawing.Size(495, 344);
             this.picRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRespuesta.TabIndex = 6;
             this.picRespuesta.TabStop = false;
@@ -166,6 +168,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPrincipal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);

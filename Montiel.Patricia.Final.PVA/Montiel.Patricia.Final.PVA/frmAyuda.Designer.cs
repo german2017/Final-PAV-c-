@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAyuda));
             this.btnCuadrado = new System.Windows.Forms.Button();
             this.btnRectangulo = new System.Windows.Forms.Button();
             this.btnRombo = new System.Windows.Forms.Button();
@@ -104,6 +105,7 @@
             this.Cerrar.TabIndex = 6;
             this.Cerrar.Text = "Cerrar";
             this.Cerrar.UseVisualStyleBackColor = true;
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
             // frmAyuda
             // 
@@ -117,8 +119,11 @@
             this.Controls.Add(this.btnRombo);
             this.Controls.Add(this.btnRectangulo);
             this.Controls.Add(this.btnCuadrado);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAyuda";
-            this.Text = "frmAyuda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ayuda";
+            this.Load += new System.EventHandler(this.frmAyuda_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

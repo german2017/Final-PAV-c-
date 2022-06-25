@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJugador));
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtNombreJugador = new System.Windows.Forms.TextBox();
@@ -105,6 +106,7 @@
             this.Controls.Add(this.txtNombreJugador);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmJugador";
             this.Text = "frmJugador";
             this.Load += new System.EventHandler(this.frmJugador_Load);

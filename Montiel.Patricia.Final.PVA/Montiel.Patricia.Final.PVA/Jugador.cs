@@ -34,6 +34,18 @@ namespace Montiel.Patricia.Final.PVA
                 nombre = value;
             }
         }
+        
+        public string Division 
+        { 
+            get
+            {
+                return division;
+            }
+            set
+            {
+                division = value;
+            }
+        }
         public int Intentos 
         { 
             get
@@ -44,17 +56,6 @@ namespace Montiel.Patricia.Final.PVA
             set
             {
                 intentos = value;
-            }
-        }
-        public string Division 
-        { 
-            get
-            {
-                return division;
-            }
-            set
-            {
-                division = value;
             }
         }
     public static int OrdenarPorPuntaje(Jugador j1, Jugador j2)

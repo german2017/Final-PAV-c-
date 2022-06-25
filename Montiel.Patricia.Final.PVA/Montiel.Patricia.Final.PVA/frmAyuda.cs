@@ -22,35 +22,45 @@ namespace Montiel.Patricia.Final.PVA
         private void btnCuadrado_Click(object sender, EventArgs e)
         {
             frmAyudaFigura ayudaFigura = new frmAyudaFigura(directorio + "Recursos Imagenes\\Cuadrado.png");
-            ayudaFigura.ShowDialog();
+            ayudaFigura.Show();
         }
 
         private void btnRectangulo_Click(object sender, EventArgs e)
         {
 
             frmAyudaFigura ayudaFigura = new frmAyudaFigura(directorio + "Recursos Imagenes\\Rectangulo.png");
-            ayudaFigura.ShowDialog();
+            ayudaFigura.Show();
         }
 
         private void btnRombo_Click(object sender, EventArgs e)
         {
 
             frmAyudaFigura ayudaFigura = new frmAyudaFigura(directorio + "Recursos Imagenes\\Rombo.png");
-            ayudaFigura.ShowDialog();
+            ayudaFigura.Show();
         }
 
         private void btnRomboide_Click(object sender, EventArgs e)
         {
 
             frmAyudaFigura ayudaFigura = new frmAyudaFigura(directorio + "Recursos Imagenes\\Romboide.png");
-            ayudaFigura.ShowDialog();
+            ayudaFigura.Show();
         }
 
         private void btnTrapecio_Click(object sender, EventArgs e)
         {
 
             frmAyudaFigura ayudaFigura = new frmAyudaFigura(directorio + "Recursos Imagenes\\Trapecio.png");
-            ayudaFigura.ShowDialog();
+            ayudaFigura.Show();
+        }
+
+        private void frmAyuda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

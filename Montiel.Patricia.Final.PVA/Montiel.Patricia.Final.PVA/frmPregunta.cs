@@ -40,13 +40,14 @@ namespace Montiel.Patricia.Final.PVA
             if(respuestaJugador == respuestaCorrecta)
             {
                 puntaje = 10;
-                MessageBox.Show("Muy bien!!!!");
+                MessageBox.Show("Respuesta correcta", "Felicitaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 this.DialogResult = DialogResult.Yes;
                 //this.Close();
             }
             else
             {
-                MessageBox.Show("La pifiaste!!! Intenta de nuevo");
+                MessageBox.Show("Intenta de nuevo","Tuviste un error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 this.DialogResult = DialogResult.No;
             }
 
@@ -55,6 +56,7 @@ namespace Montiel.Patricia.Final.PVA
         private void frmPregunta_Load(object sender, EventArgs e)
         {
             //this.WindowState = FormWindowState.Maximized;
+            txtRespuesta.Focus();
         }
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)

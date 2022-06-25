@@ -10,7 +10,7 @@ namespace Montiel.Patricia.Final.PVA
         private int puntajeAcumulado;
         private List<Jugador> listaJugadores;
         private Jugador elJugador;
-        private Datos data;
+        //private Datos data;
         private Stack<String> correctas;
         private List<String> incorrectas;
         private Random r;
@@ -66,7 +66,7 @@ namespace Montiel.Patricia.Final.PVA
             {
                 elJugador = nuevoJugador.JugadorFormulario;
                 button1.Enabled = true;
-
+                this.Text = "MATEDEC --> Jugador: " + elJugador.Nombre;
 
             }
 
@@ -92,13 +92,13 @@ namespace Montiel.Patricia.Final.PVA
         {
             frmAyuda miAyuda = new frmAyuda();
 
-            miAyuda.ShowDialog();
+            miAyuda.Show(this);
         }
-
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();        
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -144,9 +144,13 @@ namespace Montiel.Patricia.Final.PVA
                         int random;
                         r= new Random();
                         random = r.Next(0,5);
+
+
                         //picRespuesta.Image = Image.FromFile(directorio + "Recursos Imagenes\\festejo.gif");
-                        picRespuesta.Image = Image.FromFile(incorrectas[random]); 
-                       // picRespuesta.Image = Image.FromFile(directorio + "Recursos Imagenes\\perder.gif");
+                        picRespuesta.Image = Image.FromFile(incorrectas[random]);
+                        // picRespuesta.Image = Image.FromFile(directorio + "Recursos Imagenes\\perder.gif");
+                      
+
 
                     }
 
@@ -161,10 +165,6 @@ namespace Montiel.Patricia.Final.PVA
                 }
              
             }
-
-
-
-           
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
