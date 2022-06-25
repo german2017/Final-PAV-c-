@@ -12,9 +12,20 @@ namespace Montiel.Patricia.Final.PVA
 {
     public partial class frmAyudaFigura : Form
     {
-        public frmAyudaFigura()
+        public frmAyudaFigura(String imagen)
         {
             InitializeComponent();
+            this.pictureBox1.Image = Image.FromFile(imagen);
+        }
+
+        private void frmAyudaFigura_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

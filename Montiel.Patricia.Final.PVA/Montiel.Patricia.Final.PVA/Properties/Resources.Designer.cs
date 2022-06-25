@@ -59,5 +59,15 @@ namespace Montiel.Patricia.Final.PVA.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Casa {
+            get {
+                object obj = ResourceManager.GetObject("Casa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

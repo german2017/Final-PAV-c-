@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\profe\\source\\repos\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj": {}
+    "C:\\Users\\profe\\Desktop\\Final Patri\\Final-PAV-c-\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\profe\\source\\repos\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj": {
+    "C:\\Users\\profe\\Desktop\\Final Patri\\Final-PAV-c-\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\profe\\source\\repos\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj",
+        "projectUniqueName": "C:\\Users\\profe\\Desktop\\Final Patri\\Final-PAV-c-\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj",
         "projectName": "Montiel.Patricia.Final.PVA",
-        "projectPath": "C:\\Users\\profe\\source\\repos\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj",
+        "projectPath": "C:\\Users\\profe\\Desktop\\Final Patri\\Final-PAV-c-\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj",
         "packagesPath": "C:\\Users\\profe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\profe\\source\\repos\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\obj\\",
+        "outputPath": "C:\\Users\\profe\\Desktop\\Final Patri\\Final-PAV-c-\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\profe\\AppData\\Roaming\\NuGet\\NuGet.Config",

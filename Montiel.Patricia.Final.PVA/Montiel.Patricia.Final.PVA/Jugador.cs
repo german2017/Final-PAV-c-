@@ -10,13 +10,17 @@ namespace Montiel.Patricia.Final.PVA
     {
         private string nombre;
         private string division;
-        private int puntaje;
+        private int intentos;
 
+        public Jugador()
+        {
+
+        }
         public Jugador(string nombre, string division, int puntaje)
         {
             this.nombre = nombre;
             this.division = division;
-            this.puntaje = puntaje;
+            this.intentos = puntaje;
         }
 
         public string Nombre 
@@ -30,16 +34,16 @@ namespace Montiel.Patricia.Final.PVA
                 nombre = value;
             }
         }
-        public int Puntaje 
+        public int Intentos 
         { 
             get
             {
-                return puntaje;
+                return intentos;
 
             }
             set
             {
-                puntaje = value;
+                intentos = value;
             }
         }
         public string Division 
@@ -53,6 +57,27 @@ namespace Montiel.Patricia.Final.PVA
                 division = value;
             }
         }
+    public static int OrdenarPorPuntaje(Jugador j1, Jugador j2)
+    {
+        int ret = 0;
 
+        if(j1.Intentos>j2.Intentos)
+        {
+            ret = 1;
+        }
+        else
+        {
+            if(j1.Intentos<j2.Intentos)
+            {
+                ret = -1;
+            }
+        }
+
+
+        return ret;
     }
+    }
+
+    
+
 }

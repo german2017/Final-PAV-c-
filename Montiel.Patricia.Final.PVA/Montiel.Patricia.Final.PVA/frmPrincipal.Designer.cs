@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarJugadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empezarJuegoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tablaPosicionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblIntentos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.picRespuesta = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRespuesta)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,6 +62,7 @@
             this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cargarJugadorToolStripMenuItem,
             this.empezarJuegoToolStripMenuItem,
+            this.tablaPosicionesToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
@@ -68,21 +71,28 @@
             // cargarJugadorToolStripMenuItem
             // 
             this.cargarJugadorToolStripMenuItem.Name = "cargarJugadorToolStripMenuItem";
-            this.cargarJugadorToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.cargarJugadorToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.cargarJugadorToolStripMenuItem.Text = "Cargar Jugador";
             this.cargarJugadorToolStripMenuItem.Click += new System.EventHandler(this.cargarJugadorToolStripMenuItem_Click);
             // 
             // empezarJuegoToolStripMenuItem
             // 
             this.empezarJuegoToolStripMenuItem.Name = "empezarJuegoToolStripMenuItem";
-            this.empezarJuegoToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.empezarJuegoToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.empezarJuegoToolStripMenuItem.Text = "Empezar Juego";
             this.empezarJuegoToolStripMenuItem.Click += new System.EventHandler(this.empezarJuegoToolStripMenuItem_Click);
+            // 
+            // tablaPosicionesToolStripMenuItem
+            // 
+            this.tablaPosicionesToolStripMenuItem.Name = "tablaPosicionesToolStripMenuItem";
+            this.tablaPosicionesToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.tablaPosicionesToolStripMenuItem.Text = "Tabla Posiciones";
+            this.tablaPosicionesToolStripMenuItem.Click += new System.EventHandler(this.tablaPosicionesToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -106,8 +116,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 156);
+            this.pictureBox1.Image = global::Montiel.Patricia.Final.PVA.Properties.Resources.Casa;
+            this.pictureBox1.Location = new System.Drawing.Point(31, 122);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(958, 683);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -118,7 +128,7 @@
             // 
             this.lblIntentos.AutoSize = true;
             this.lblIntentos.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIntentos.Location = new System.Drawing.Point(1116, 464);
+            this.lblIntentos.Location = new System.Drawing.Point(1116, 376);
             this.lblIntentos.Name = "lblIntentos";
             this.lblIntentos.Size = new System.Drawing.Size(142, 38);
             this.lblIntentos.TabIndex = 3;
@@ -136,11 +146,21 @@
             this.label1.Text = "HAS SIDO CONTRATADO PARA REALIZAR ALGUNAS REFACCIONES EN ESTA CASA, A TRABAJAR..." +
     "";
             // 
+            // picRespuesta
+            // 
+            this.picRespuesta.Location = new System.Drawing.Point(1143, 466);
+            this.picRespuesta.Name = "picRespuesta";
+            this.picRespuesta.Size = new System.Drawing.Size(401, 277);
+            this.picRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picRespuesta.TabIndex = 6;
+            this.picRespuesta.TabStop = false;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1615, 786);
+            this.Controls.Add(this.picRespuesta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblIntentos);
             this.Controls.Add(this.pictureBox1);
@@ -152,6 +172,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRespuesta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +190,7 @@
         private PictureBox pictureBox1;
         private Label lblIntentos;
         private Label label1;
+        private ToolStripMenuItem tablaPosicionesToolStripMenuItem;
+        private PictureBox picRespuesta;
     }
 }

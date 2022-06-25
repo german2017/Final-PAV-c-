@@ -26,11 +26,12 @@ namespace Montiel.Patricia.Final.PVA
         public frmJugador()
         {
             InitializeComponent();
-            unJugador = new Jugador(txtNombreJugador.Text, cmbCurso.SelectedText, 0);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            unJugador = new Jugador(txtNombreJugador.Text, cmbCurso.SelectedItem.ToString(), 0);
+
             this.DialogResult= DialogResult.OK;
         }
 

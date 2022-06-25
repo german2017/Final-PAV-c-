@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uV6u4aiXO96lGsarg9sG7278L974H2d370sI2AsAJoAvW61AWiXFr4yR7AE0vJy4mwmTGa7QYtKXuIINstu5TQ==",
+  "dgSpecHash": "/vGGXFiitsBDHeIjFIOafY8OxDBmrd7ljs0LwrlkKTwSn5alRMxFsMB948TEmhSiYp7RXFlCZ6u5iUj5DkIjEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\profe\\source\\repos\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj",
+  "projectFilePath": "C:\\Users\\profe\\Desktop\\Final Patri\\Final-PAV-c-\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA\\Montiel.Patricia.Final.PVA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\profe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\profe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
